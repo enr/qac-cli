@@ -3,7 +3,7 @@ name: CI Linux Mac
 on:
   push:
     branches:
-      - master
+      - main
     tags-ignore:
       - '*'
 
