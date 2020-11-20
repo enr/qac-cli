@@ -1,6 +1,6 @@
 # qac-cli
 
-Command ine tool to test end to end other command line tools.
+Command line tool to test end to end other command line tools.
 
 A test plan is written in YAML format.
 
@@ -27,8 +27,10 @@ Usage:
 qac path/to/testplay.yaml
 ```
 
+You can see some example plan in `examples/` directory, and how `qac-cli` tests itself in `e2e/`.
+
 ## License
 
 Apache 2.0 - see LICENSE file.
 
-Copyright 2020 qac contributors
+Copyright 2020 `qac` and `qac-cli` contributors.

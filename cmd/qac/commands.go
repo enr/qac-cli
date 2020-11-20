@@ -32,6 +32,9 @@ func doCheck(c *cli.Context) error {
 	if err != nil {
 		return exitErrorf(1, "Error check: %v", err)
 	}
+	if len(report.AllErrors()) > 0 {
+		return exitErrorf(1, "The plan failed")
+	}
 	return nil
 }
 

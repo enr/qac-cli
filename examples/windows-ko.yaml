@@ -1,0 +1,15 @@
+specs:
+  vars:
+    command:
+      exe: command-not-found
+      args:
+        - hi
+    expectations:
+      status:
+        equals_to: 0
+      output:
+        stdout:
+          contains_all:
+            - hi
+        stderr:
+          is_empty: true

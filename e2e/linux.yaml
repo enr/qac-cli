@@ -1,0 +1,45 @@
+preconditions:
+  fs:
+    - file: ../bin/qac
+      ext:
+        windows: .exe
+specs:
+  success:
+    command:
+      working_dir: ..
+      exe: bin/qac
+      ext:
+        windows: .exe
+      args:
+        - "examples/linux-ok.yaml"
+    expectations:
+      status:
+        equals_to: 0
+      output:
+        stdout:
+          contains_all:
+            - OK status
+            - OK output stdout
+            - OK output stderr
+        stderr:
+          is_empty: true
+  error:
+    command:
+      working_dir: ..
+      exe: bin/qac
+      ext:
+        windows: .exe
+      args:
+        - "examples/linux-ko.yaml"
+    expectations:
+      status:
+        equals_to: 1
+      output:
+        stdout:
+          contains_all:
+            - exit code
+        stderr:
+          contains_all:
+            - KO status
+            - KO output stdout
+            - The plan failed
