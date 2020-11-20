@@ -7,8 +7,8 @@ github.com/enr/clui v0.0.0-20201016165326-efdcff635536 h1:iCRxE1IkFmnbREg/h6AUKl
 github.com/enr/clui v0.0.0-20201016165326-efdcff635536/go.mod h1:uQo0DdM3CpwR/AYYkFE3o+hepFAjmR9Aqz8gKrXT8Bc=
 github.com/enr/go-files v0.2.0 h1:pQE1HEyHvaLBj0XMdkGCWy406FnU2tI7Yihj0pFv0Ko=
 github.com/enr/go-files v0.2.0/go.mod h1:kYv8CX8pWp8qu+fPDek6y19C5Lo2BnD49eLiueAjvgo=
-github.com/enr/qac v0.0.0-20201016225229-2ee6d0cfb0a2 h1:i0UmCbVHfnvJb3hh/Ai9RKeQ4n7FF4+jL2PFWUqu8ks=
-github.com/enr/qac v0.0.0-20201016225229-2ee6d0cfb0a2/go.mod h1:gKn3mMCHhyr7Qlsm8KqtZOchMhlmpKbZanlsxavhkAg=
+github.com/enr/qac v0.1.0 h1:fV8iPyxiXhD7fecqv802C7+WGOK8CYC9TPu9SY8bC8k=
+github.com/enr/qac v0.1.0/go.mod h1:gKn3mMCHhyr7Qlsm8KqtZOchMhlmpKbZanlsxavhkAg=
 github.com/enr/runcmd v0.5.0 h1:fllmYqUsafqeAE+wi/z2J1zXjBjc7POV9Zzj89+uZwo=
 github.com/enr/runcmd v0.5.0/go.mod h1:zI4QUR/n5ESGh9nKKd0EMR6/bxZfNLP05BxMDU5zxxc=
 github.com/extemporalgenome/slug v0.0.0-20150414033109-0320c85e32e0 h1:0A9+8DBvlpto0mr+SD1NadV5liSIAZkWnvyshwk88Bc=

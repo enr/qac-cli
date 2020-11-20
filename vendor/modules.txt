@@ -4,8 +4,9 @@ github.com/cpuguy83/go-md2man/v2/md2man
 ## explicit
 github.com/enr/clui
 # github.com/enr/go-files v0.2.0
+## explicit
 github.com/enr/go-files/files
-# github.com/enr/qac v0.0.0-20201016225229-2ee6d0cfb0a2
+# github.com/enr/qac v0.1.0
 ## explicit
 github.com/enr/qac
 # github.com/enr/runcmd v0.5.0
