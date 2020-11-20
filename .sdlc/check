@@ -108,4 +108,10 @@ for dir in $(find "$CMDS_DIR" -mindepth 1 -maxdepth 1 -type d); do
 done
 
 cd "${PRJ_HOME}"
-go test -v github.com/enr/qac-cli/e2e
+[[ -n "${SDLC_E2E_DIR}" ]] && {
+  e2e_dir="${PRJ_HOME}/${SDLC_E2E_DIR}"
+  [[ -d "$e2e_dir" ]] && {
+    echo "Running E2E tests in ${e2e_dir}"
+    go test "${REPO_HOST}/${REPO_OWNER}/${REPO_NAME}/${SDLC_E2E_DIR}"
+  }
+}
