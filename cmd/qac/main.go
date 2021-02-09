@@ -27,9 +27,8 @@ func main() {
 	app.Description = "E2E tests for command line tools"
 	app.Usage = "qac qac.yaml"
 	app.Flags = []cli.Flag{
-		// TBD
-		// &cli.BoolFlag{Name: "debug", Aliases: []string{"D"}, Usage: "operates in debug mode: lot of output"},
-		// &cli.BoolFlag{Name: "quiet", Aliases: []string{"q"}, Usage: "operates in quiet mode"},
+		&cli.BoolFlag{Name: "debug", Aliases: []string{"D"}, Usage: "operates in debug mode: lot of output"},
+		&cli.BoolFlag{Name: "quiet", Aliases: []string{"q"}, Usage: "operates in quiet mode"},
 	}
 	app.EnableBashCompletion = true
 

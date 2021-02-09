@@ -15,19 +15,19 @@ cmd_dir="${prj_home}/cmd"
 
 cd "$prj_home"
 
-# for dir in $(find "$lib_dir" -mindepth 1 -maxdepth 1 -type d); do
-#   app_name=$(basename "$dir")
-#   echo "===  Update dependencies for lib ${app_name} [${dir}]"
-#   cd "$dir"
-#   go get -u
-# done
+for dir in $(find "$lib_dir" -mindepth 1 -maxdepth 1 -type d); do
+  app_name=$(basename "$dir")
+  echo "===  Update dependencies for lib ${app_name} [${dir}]"
+  cd "$dir"
+  go get -u
+done
 
-# for dir in $(find "$cmd_dir" -mindepth 1 -maxdepth 1 -type d); do
-#   app_name=$(basename "$dir")
-#   echo "===  Update dependencies for cmd ${app_name} [${dir}]"
-#   cd "$dir"
-#   go get -u
-# done
+for dir in $(find "$cmd_dir" -mindepth 1 -maxdepth 1 -type d); do
+  app_name=$(basename "$dir")
+  echo "===  Update dependencies for cmd ${app_name} [${dir}]"
+  cd "$dir"
+  go get -u
+done
 
 cd "$prj_home"
 
