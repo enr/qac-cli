@@ -1,5 +1,9 @@
 # qac-cli
 
+![CI Linux Mac](https://github.com/enr/qac-cli/workflows/CI%20Linux%20Mac/badge.svg)
+![CI Windows](https://github.com/enr/qac-cli/workflows/CI%20Windows/badge.svg)
+[![Download](https://img.shields.io/badge/Download-Last%20release-brightgreen)](https://github.com/enr/qac-cli/releases/latest)
+
 Command line tool to test _end to end_ other command line tools.
 
 A test plan is written in YAML format.

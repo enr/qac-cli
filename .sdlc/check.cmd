@@ -31,6 +31,7 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 for /f %%x in ('dir /AD /B /S lib') do (
     echo --- go test lib %%x
     cd %%x
+    call go test -mod vendor -race ./...
     call go test -mod vendor -cover ./...
 )
 
