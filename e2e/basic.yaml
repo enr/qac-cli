@@ -38,7 +38,6 @@ specs:
       output:
         stdout:
           contains_all:
-            # TODO: come inserire version precisa?
             - qac version
             - Revision
             - Build date

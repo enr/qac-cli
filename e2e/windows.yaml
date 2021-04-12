@@ -33,7 +33,7 @@ specs:
         - "examples/windows-ko.yaml"
     expectations:
       status:
-        equals_to: 1
+        equals_to: 2
       output:
         stdout:
           contains_all:

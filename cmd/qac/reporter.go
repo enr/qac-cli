@@ -35,7 +35,6 @@ func (r *uiReporter) Publish(report *qac.TestExecutionReport) error {
 	for _, block := range report.Blocks() {
 		r.ui.Titlef("Phase <%s>", block.Phase())
 		for _, entry := range block.Entries() {
-			// r.ui.Lifecyclef(" - %s", entry.Description())
 			switch entry.Kind() {
 			case qac.ErrorType:
 				r.ui.Errorf("  | - KO %s", entry.Description())
@@ -50,7 +49,7 @@ func (r *uiReporter) Publish(report *qac.TestExecutionReport) error {
 				r.ui.Successf("  | - OK %s", entry.Description())
 				break
 			default:
-				r.ui.Warnf("unexpected kind %v", entry.Kind())
+				r.ui.Warnf("Unexpected entry kind %v", entry.Kind())
 			}
 		}
 	}

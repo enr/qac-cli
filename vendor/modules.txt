@@ -1,12 +1,13 @@
-# github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d
+# github.com/cpuguy83/go-md2man/v2 v2.0.0
+## explicit
 github.com/cpuguy83/go-md2man/v2/md2man
 # github.com/enr/clui v0.0.0-20201016165326-efdcff635536
 ## explicit
 github.com/enr/clui
-# github.com/enr/go-files v0.2.0
+# github.com/enr/go-files v0.3.0
 ## explicit
 github.com/enr/go-files/files
-# github.com/enr/qac v0.1.0
+# github.com/enr/qac v0.2.0
 ## explicit
 github.com/enr/qac
 # github.com/enr/runcmd v0.5.0
@@ -19,19 +20,22 @@ github.com/mattn/go-colorable
 github.com/mattn/go-isatty
 # github.com/mitchellh/go-homedir v1.1.0
 github.com/mitchellh/go-homedir
-# github.com/russross/blackfriday/v2 v2.0.1
+# github.com/russross/blackfriday/v2 v2.1.0
+## explicit
 github.com/russross/blackfriday/v2
-# github.com/shurcooL/sanitized_anchor_name v1.0.0
-github.com/shurcooL/sanitized_anchor_name
 # github.com/subosito/gotenv v1.2.0
 github.com/subosito/gotenv
-# github.com/urfave/cli/v2 v2.2.0
+# github.com/urfave/cli/v2 v2.3.0
 ## explicit
 github.com/urfave/cli/v2
-# golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd
+# golang.org/x/sys v0.0.0-20210403161142-5e06dd20ab57
+## explicit
+golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
-# golang.org/x/text v0.3.2
+# golang.org/x/text v0.3.6
+## explicit
 golang.org/x/text/transform
 golang.org/x/text/unicode/norm
-# gopkg.in/yaml.v2 v2.3.0
+# gopkg.in/yaml.v2 v2.4.0
+## explicit
 gopkg.in/yaml.v2

@@ -25,7 +25,7 @@ func main() {
 	app.Name = "qac"
 	app.Version = appVersion
 	app.Description = "E2E tests for command line tools"
-	app.Usage = "qac qac.yaml"
+	app.Usage = "qac /path/to/testplan.yaml"
 	app.Flags = []cli.Flag{
 		&cli.BoolFlag{Name: "debug", Aliases: []string{"D"}, Usage: "operates in debug mode: lot of output"},
 		&cli.BoolFlag{Name: "quiet", Aliases: []string{"q"}, Usage: "operates in quiet mode"},

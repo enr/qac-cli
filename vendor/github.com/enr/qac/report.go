@@ -18,10 +18,6 @@ const (
 	SuccessType
 )
 
-func (r ReportEntryType) String() string {
-	return [...]string{`NONE`, `ERROR`, `INFO`, `SUCCESS`}[r]
-}
-
 // ReportEntry is a single unit of information in a report.
 type ReportEntry struct {
 	kind        ReportEntryType

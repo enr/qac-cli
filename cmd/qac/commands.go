@@ -22,7 +22,6 @@ var checkCommand = cli.Command{
 func doCheck(c *cli.Context) error {
 	if !c.Args().Present() {
 		return exitErrorf(1, "Missing file")
-
 	}
 	qf := c.Args().Get(0)
 	launcher := qac.NewLauncher()
@@ -33,7 +32,7 @@ func doCheck(c *cli.Context) error {
 		return exitErrorf(1, "Error check: %v", err)
 	}
 	if len(report.AllErrors()) > 0 {
-		return exitErrorf(1, "The plan failed")
+		return exitErrorf(2, "The plan failed: %d errors", len(report.AllErrors()))
 	}
 	return nil
 }
